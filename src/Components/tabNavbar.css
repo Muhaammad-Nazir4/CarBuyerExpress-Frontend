@@ -1,0 +1,38 @@
+.tabnav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    background: #505050;
+    overflow-x: hidden;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-bottom: 1px solid white;
+}
+
+.tabnavlink {
+    flex: 1;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tabnavlink:hover {
+    background-color: white;
+    color: black;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+
+@media (max-width: 900px) {
+    .tabnav {
+        display: none;
+    }
+}

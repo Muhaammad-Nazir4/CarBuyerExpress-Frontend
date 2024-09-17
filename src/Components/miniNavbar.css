@@ -1,0 +1,110 @@
+/* miniNavbar.css */
+
+.navbar-container {
+  width: 100%;
+  background-color: #505050;
+  position: fixed;
+  top: 2vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 15px;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  color: #ecf0f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 25px;
+  border-bottom: 5px solid white;
+  z-Index:1;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-item {
+  line-height: 32px;
+  width: 250px;
+}
+
+.navbar-item i {
+  margin-right: 10px;
+}
+
+.flag-icon {
+  width: 30px;
+  height: 20px;
+  margin-left: 200px;
+}
+
+/* Animation for mobile and tablet views */
+@media (max-width: 1024px) {
+
+    .navbar-container {
+        top: 2vh;
+        
+      }
+  .navbar-list {
+    animation: change 10s infinite;
+  }
+
+  .navbar-item {
+    display: block;
+  }
+  .flag-icon {
+    display: inline; 
+    margin-top: -20px;
+    margin-left: 20px;
+
+  }
+}
+
+/* Static view for desktop */
+@media (min-width: 1025px) {
+  .navbar-list {
+    display: flex;
+    margin-top: -20px;
+  }
+
+  .navbar-item {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .flag-icon {
+    display: inline; 
+    margin-top: -20px;
+
+  }
+}
+
+@keyframes opacity {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes change {
+  0%, 12.66%, 100% { transform: translate3d(0, 0, 0); }
+  16.66%, 29.32% { transform: translate3d(0, -25%, 0); }
+  33.32%, 45.98% { transform: translate3d(0, -50%, 0); }
+  49.98%, 62.64% { transform: translate3d(0, -75%, 0); }
+  66.64%, 79.3% { transform: translate3d(0, -50%, 0); }
+  83.3%, 95.96% { transform: translate3d(0, -25%, 0); }
+}
+
+
+
+
+

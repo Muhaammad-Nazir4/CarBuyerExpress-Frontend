@@ -1,0 +1,28 @@
+
+  .rimImage img,
+.tyreImage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50px;
+  transition: transform 0.3s ease;
+}
+
+.rimImage img:hover,
+.tyreImage img:hover {
+  transform: scale(1.1);
+}
+
+/* for crousel */
+
+.list-group-item-hover {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+  }
+  
+  .list-group-item-hover:hover {
+    background-color: orange;
+    
+  }
+
+  

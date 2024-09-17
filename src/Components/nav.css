@@ -1,0 +1,28 @@
+@keyframes fadeInScaleUp {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .logo-animation {
+    animation: fadeInScaleUp 2s ease-in-out infinite;
+  }
+  
+  .text-animation {
+    animation: fadeInScaleUp 2s ease-in-out infinite;
+    animation-delay: 1s; 
+  }
+
+  .footer-animation {
+    animation: fadeInScaleUp 2s ease-in-out infinite;
+  }
+  
+  
+
+
+   
